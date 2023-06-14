@@ -13,13 +13,17 @@
 <body>
     <header>
         <h2 id="logo">Laura Elfving </h2>
-        <nav>
-            <ul class="navigation-items">
-                <li class="navigation-item"><a href="#about-me">About Me</a></li>
-                <li class="navigation-item"><a href="#projects">Projects</a></li>
-                <li class="navigation-item"><a href="contact.html">Contact</a></li>
-              </ul>
-        </nav>
+
+        <!---DROPDOWN-->
+        <div class="dropdown">
+            <button onclick="toggleDropdown()" class="dropbtn">Menu</button>
+            <div id="myDropdown" class="dropdown-content">
+              <a href="./index.html">About Me</a>
+              <a href="./index.html">Projects</a>
+              <a href="./contact.html">Contact</a>
+            </div>
+          </div>
+         <!---DROPDOWN-->
     </header>
 
     <main>
@@ -73,7 +77,14 @@
 </body>
 
 <script>
-
+function toggleDropdown() {
+  var dropdown = document.getElementById("myDropdown");
+  if (dropdown.style.display === "block") {
+    dropdown.style.display = "none";
+  } else {
+    dropdown.style.display = "block";
+  }
+}
 </script>
 
 </html>

@@ -18,6 +18,7 @@ header {
     align-self: flex-start;
   }
 
+  /*
 .navigation-items {
   display: flex;
   flex-direction: row;
@@ -34,6 +35,50 @@ header {
   text-decoration: none;
   color:rgb(32, 31, 31)
 }
+*/
+
+/*DROPDOWN*/
+/* Dropdown container */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown button */
+.dropbtn {
+  background-color: #f1f1f1;
+  color: #000;
+  padding: 10px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+/* Dropdown content */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Dropdown links */
+.dropdown-content a {
+  color: #000;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Show the dropdown when hovering or clicking on the button */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+/*DROPDOWN ENDS*/
+
+
 
 /* Styles for devices with a width of 868px and above (tablets) */
 @media screen and (max-width: 868px) {
